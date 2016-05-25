@@ -1,0 +1,20 @@
+<ion-view cache-view="false" title="Login" id="page6" class=" ">
+    <ion-content padding="true" class="has-header">
+        <form id="login-form1" class="list" name="form">
+            <ion-list id="login-list1" class=" ">
+                <label class="item item-input " id="login-input1">
+                    <span class="input-label">Email</span>
+                    <input type="email" placeholder="" ng-required ng-model="email">
+                </label>
+                <label class="item item-input " id="login-input2">
+                    <span class="input-label">Contraseña</span>
+                    <input type="password" placeholder="" ng-required ng-model="password">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <a ng-click="login(email, password)" ui-sref="dashboard.rutaSabana_tab1" id="login-button3" class=" button button-positive  button-block ">Log in</a>
+            <a href="#" id="login-button4" class=" button button-stable  button-block button-clear ">Recuperar Contraseña</a>
+            <a ui-sref="registrarse" id="login-button6" class=" button button-positive  button-block button-clear ">Registrarse</a>
+        </form>
+    </ion-content>
+</ion-view>
